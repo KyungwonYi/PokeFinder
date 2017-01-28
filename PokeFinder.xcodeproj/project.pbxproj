@@ -19,6 +19,12 @@
 		155449B41E3D20F2008C6BAF /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 155449AE1E3D20F2008C6BAF /* GFGeoHashQuery.m */; };
 		155449B51E3D20F2008C6BAF /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 155449B01E3D20F2008C6BAF /* GFQuery.m */; };
 		155449BC1E3D260E008C6BAF /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155449BB1E3D260E008C6BAF /* PokeAnnotation.swift */; };
+		15C52E591E3D5A480066390C /* PokemonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C52E581E3D5A480066390C /* PokemonListViewController.swift */; };
+		15C52E5B1E3D5ACC0066390C /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C52E5A1E3D5ACC0066390C /* PokeCell.swift */; };
+		15C52E5D1E3D5AFD0066390C /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 15C52E5C1E3D5AFD0066390C /* pokemon.csv */; };
+		15C52E5F1E3D5B140066390C /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C52E5E1E3D5B140066390C /* csv.swift */; };
+		15C52E611E3D5BB90066390C /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C52E601E3D5BB90066390C /* Pokemon.swift */; };
+		15C52E631E3D5E320066390C /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C52E621E3D5E320066390C /* img.png */; };
 		2FD3DDA6DD1F9F0F6A3CA23C /* Pods_PokeFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6DEA3E2B9BB5B477299707E /* Pods_PokeFinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +54,12 @@
 		155449AF1E3D20F2008C6BAF /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		155449B01E3D20F2008C6BAF /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		155449BB1E3D260E008C6BAF /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
+		15C52E581E3D5A480066390C /* PokemonListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonListViewController.swift; sourceTree = "<group>"; };
+		15C52E5A1E3D5ACC0066390C /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		15C52E5C1E3D5AFD0066390C /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		15C52E5E1E3D5B140066390C /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		15C52E601E3D5BB90066390C /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		15C52E621E3D5E320066390C /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
 		1B64E56A9DE14CFFEC52703B /* Pods-PokeFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokeFinder/Pods-PokeFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		C6DEA3E2B9BB5B477299707E /* Pods_PokeFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokeFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC78FFC1B16359EE95017F5E /* Pods-PokeFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokeFinder/Pods-PokeFinder.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +105,7 @@
 				155449B61E3D2596008C6BAF /* Controller */,
 				155449BA1E3D25E2008C6BAF /* Plists */,
 				151490871E37C21D00CE356A /* Assets.xcassets */,
+				15C52E621E3D5E320066390C /* img.png */,
 				1554499B1E3D208B008C6BAF /* PokeFinder-Bridging-Header.h */,
 			);
 			path = PokeFinder;
@@ -140,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				151490821E37C21D00CE356A /* ViewController.swift */,
+				15C52E581E3D5A480066390C /* PokemonListViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -149,6 +163,7 @@
 			children = (
 				151490841E37C21D00CE356A /* Main.storyboard */,
 				151490891E37C21D00CE356A /* LaunchScreen.storyboard */,
+				15C52E5A1E3D5ACC0066390C /* PokeCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -157,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				155449BB1E3D260E008C6BAF /* PokeAnnotation.swift */,
+				15C52E601E3D5BB90066390C /* Pokemon.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -164,6 +180,8 @@
 		155449B91E3D25D4008C6BAF /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				15C52E5C1E3D5AFD0066390C /* pokemon.csv */,
+				15C52E5E1E3D5B140066390C /* csv.swift */,
 				1554499F1E3D20F2008C6BAF /* GeoFire */,
 			);
 			name = Util;
@@ -261,8 +279,10 @@
 			files = (
 				1514908B1E37C21D00CE356A /* LaunchScreen.storyboard in Resources */,
 				1554497D1E3C2E99008C6BAF /* GoogleService-Info.plist in Resources */,
+				15C52E631E3D5E320066390C /* img.png in Resources */,
 				151490881E37C21D00CE356A /* Assets.xcassets in Resources */,
 				151490861E37C21D00CE356A /* Main.storyboard in Resources */,
+				15C52E5D1E3D5AFD0066390C /* pokemon.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,8 +343,12 @@
 			files = (
 				155449B21E3D20F2008C6BAF /* GFBase32Utils.m in Sources */,
 				155449BC1E3D260E008C6BAF /* PokeAnnotation.swift in Sources */,
+				15C52E5F1E3D5B140066390C /* csv.swift in Sources */,
 				151490831E37C21D00CE356A /* ViewController.swift in Sources */,
 				155449B31E3D20F2008C6BAF /* GFGeoHash.m in Sources */,
+				15C52E611E3D5BB90066390C /* Pokemon.swift in Sources */,
+				15C52E5B1E3D5ACC0066390C /* PokeCell.swift in Sources */,
+				15C52E591E3D5A480066390C /* PokemonListViewController.swift in Sources */,
 				151490811E37C21D00CE356A /* AppDelegate.swift in Sources */,
 				155449B11E3D20F2008C6BAF /* GeoFire.m in Sources */,
 				155449B41E3D20F2008C6BAF /* GFGeoHashQuery.m in Sources */,
