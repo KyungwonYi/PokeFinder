@@ -34,5 +34,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is needed to show nearby pokemon. If you don&apos;t want to catch em&apos; all, then keep your dumb location to yourself</string>
 </dict>
 </plist>

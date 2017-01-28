@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,19 +36,86 @@
                                     <action selector="spotRandomPokemon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAi-5T-WBX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQx-dn-fJv">
+                                <rect key="frame" x="20" y="20" width="137" height="40"/>
+                                <color key="backgroundColor" red="0.27618676689999999" green="0.27618676689999999" blue="0.27618676689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="J2r-Kf-GBn"/>
+                                    <constraint firstAttribute="width" constant="137" id="xrW-Wu-aFH"/>
+                                </constraints>
+                                <state key="normal" title="Pokemon Picker">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPokemonPickerView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zix-rb-gk2"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBb-hA-6Mw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXA-Vx-Sd8">
+                                        <rect key="frame" x="27" y="225" width="320" height="216"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="216" id="0L3-jK-X8n"/>
+                                            <constraint firstAttribute="width" constant="320" id="phQ-LA-EFq"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a pokemon by it's ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xq-n4-d8g">
+                                        <rect key="frame" x="55" y="186" width="265" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="265" id="1Ek-Tb-S6t"/>
+                                            <constraint firstAttribute="height" constant="31" id="c97-Ay-Vqb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlq-YM-kNL">
+                                        <rect key="frame" x="153" y="449" width="68" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="TN8-zA-PbB"/>
+                                            <constraint firstAttribute="width" constant="68" id="ayW-16-aTY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closePicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eqc-Pn-AWt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eXA-Vx-Sd8" firstAttribute="centerY" secondItem="KBb-hA-6Mw" secondAttribute="centerY" id="JS4-HP-VC7"/>
+                                    <constraint firstItem="9Xq-n4-d8g" firstAttribute="top" secondItem="KBb-hA-6Mw" secondAttribute="topMargin" constant="178" id="JVf-5Y-Axp"/>
+                                    <constraint firstItem="dlq-YM-kNL" firstAttribute="centerX" secondItem="KBb-hA-6Mw" secondAttribute="centerX" id="Zbk-07-wyq"/>
+                                    <constraint firstItem="eXA-Vx-Sd8" firstAttribute="centerX" secondItem="KBb-hA-6Mw" secondAttribute="centerX" id="b06-GC-tnU"/>
+                                    <constraint firstItem="dlq-YM-kNL" firstAttribute="top" secondItem="eXA-Vx-Sd8" secondAttribute="bottom" constant="8" id="tYV-l0-AfF"/>
+                                    <constraint firstItem="9Xq-n4-d8g" firstAttribute="centerX" secondItem="KBb-hA-6Mw" secondAttribute="centerX" id="zZ3-xL-wcb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fyc-Nq-9Q9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="B3f-wZ-lmp"/>
+                            <constraint firstItem="KBb-hA-6Mw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HGp-zv-hOJ"/>
                             <constraint firstItem="xLS-dP-eWL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="HN5-Px-TWy"/>
+                            <constraint firstItem="QQx-dn-fJv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="N9Z-un-iop"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fyc-Nq-9Q9" secondAttribute="bottom" id="NjX-ko-FD5"/>
+                            <constraint firstItem="QQx-dn-fJv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="RYk-0j-96t"/>
+                            <constraint firstItem="KBb-hA-6Mw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WUz-HT-Tx5"/>
                             <constraint firstAttribute="trailing" secondItem="fyc-Nq-9Q9" secondAttribute="trailing" id="bZF-Ey-uwu"/>
                             <constraint firstItem="fyc-Nq-9Q9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jJ7-qs-AZe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KBb-hA-6Mw" secondAttribute="bottom" id="mkn-cZ-oKc"/>
+                            <constraint firstAttribute="trailing" secondItem="KBb-hA-6Mw" secondAttribute="trailing" id="qrl-r3-5xv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xLS-dP-eWL" secondAttribute="bottom" constant="20" id="uEW-W2-12D"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bgView" destination="KBb-hA-6Mw" id="EB3-kc-yl9"/>
                         <outlet property="mapView" destination="fyc-Nq-9Q9" id="mfL-hB-g1a"/>
+                        <outlet property="pickerView" destination="eXA-Vx-Sd8" id="bDW-yR-W3P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
